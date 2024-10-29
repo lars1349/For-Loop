@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="textInput">
+    <button onclick="printNumbers()">Numbers; Add +2 (AKA print number)</button><br></br>
+    <div id="numbers"></div>
+
+    <script>
+        function printNumbers(){
+            // maxValue = 20; |---> siste nummer som blir printet ut.
+            // let counter = 2; |---> første nummer som blir printet ut (startnummer)
+            // counter<=maxValue; |---> stopper å printe ut på dette nummeret (eller lavere)
+            // counter+=2 (counter = counter +2) |---> legger til +2 (eller et annet tall) på 'let counter'
+            let maxValue = 20;
+            for (let counter = 2; counter <= maxValue; counter+=2){
+                document.getElementById('numbers').innerHTML += '<li>' + counter + '</li>';
+        }
+    }
+    </script>
+</body>
+</html>
